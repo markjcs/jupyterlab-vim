@@ -515,6 +515,12 @@ function activateCellVim(app: JupyterFrontEnd, tracker: INotebookTracker): Promi
             selector: '.jp-Notebook.jp-mod-editMode',
             keys: ['Accel 3'],
             command: 'notebook:change-cell-to-raw'
+	 });
+	// add by jh
+	commands.addKeyBinding({
+            selector: '.jp-Notebook.jp-mod-editMode',
+            keys: ['Accel Escape'],
+            command: 'notebook:enter-command-mode'
         });
         commands.addKeyBinding({
             selector: '.jp-Notebook.jp-mod-editMode',
